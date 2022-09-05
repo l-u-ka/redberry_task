@@ -396,7 +396,7 @@ export default function Add({isMobile, token}) {
     function handleSubmit(event) {
       event.preventDefault()        // stop refresh aftet submit 
       if (submitValidation(fullInfo)) {
-        setIsCompleted(prev => !prev)
+        setIsCompleted(true)
         localStorage.clear();
       }
     }
@@ -514,7 +514,7 @@ export default function Add({isMobile, token}) {
                 <div className="two_equal_columns">
                     <div className="date">
                         <h4 className="title">შეძენის რიცხვი (არჩევითი)</h4>
-                        <input className="input two_column_width" name="laptop_purchase_date" onChange={handleChange} value={fullInfo.laptop_purchase_date} type="text" onfocus="(this.type='date')" placeholder="დდ /თთ /წწწწწ"></input>
+                        <input className="input two_column_width" name="laptop_purchase_date" onChange={handleChange} value={fullInfo.laptop_purchase_date} type="text" placeholder="დდ /თთ /წწწწწ"></input>
                     </div>
                     <div className="price">
                         <h4 className="title" style={laptopPriceTextColor}>ლეპტოპის ფასი</h4>
