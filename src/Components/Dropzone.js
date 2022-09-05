@@ -10,14 +10,15 @@ export default function Dropzone({files, setFiles, textColor, borderColor, notUp
     const images = files.map((file) => (
       <div key={file.name}>
         <div>
-          <img src={file.preview} style={{width: "100%", height: "420px", borderRadius: "18px"}} alt="preview" />
+          <img src={file.preview} style={{width: "100%", height: !isMobile ? "420px" : "240px", borderRadius: "18px"}} alt="preview" />
         </div>
       </div>
     ))
     const fileInfo = files.map((file) => (
-      <div key={file.path}>
+      <div key={file.path} style={{display: !isMobile && "flex", alignItems: "center"}}>
         <div style={{maxWidth: '150px',fontSstyle: 'normal', fontWeight: '400', fontSize: '12px', lineHeight: '14px', color: '#202020'}}> {file.path}</div> 
-        <div style={{}}> {file.size} mb</div>
+        {!isMobile && <div className="comma" style={{marginRight: '10px'}}>{","}</div>}
+        <div style={{color: '#5F5F5F'}}> {(file.size/1000000).toPrecision(2)} mb</div>
       </div>
     ))
     console.log(images)
@@ -82,7 +83,7 @@ export default function Dropzone({files, setFiles, textColor, borderColor, notUp
             {images.length===0 && <p className="drop_down_text">{!isMobile ? 'ჩააგდე ან ატვირთე ლეპტოპის ფოტო' : 'ლეპტოპის ფოტოს ატვირთვა'}</p>}
             <div style={beneathPhoto}>
               <div style={{display: 'flex', alignItems: "center"}}>
-                {images.length!==0 && <img src={Vector} alt="successImg"></img>}
+                {images.length!==0 && <img style={{marginRight: '15px'}}src={Vector} alt="successImg"></img>}
                 <div>{fileInfo}</div>
             </div>
             {(isMobile && images.length===0 && notUploaded) && <img alt="errorImg" src={ImageError}/>}

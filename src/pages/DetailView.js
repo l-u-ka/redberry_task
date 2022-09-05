@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom"
 import returnArrowDesktop from '../images/Group 4.png'
 import returnArrow from '../images/Vector (2).png'
 
-export default function DetailView({isMobile}) {
+export default function DetailView({isMobile, token}) {
     let {idParam} = useParams();
     const [id, setId] = React.useState(idParam)
 
@@ -34,7 +34,6 @@ export default function DetailView({isMobile}) {
         "price": ""
       }
     });
-    const token = "b08acc2558ace25bbab33d0846a79260";
 
 
     React.useEffect(
@@ -125,7 +124,7 @@ export default function DetailView({isMobile}) {
                   <p className='dark'>მეილი: </p>
                   <p className='light'>{detailInfo.user.email}</p>
                   <p className='dark'>ტელ. ნომერი: </p>
-                  <p className='light'>{detailInfo.user.phone_number}</p>
+                  <p className='light'>{(detailInfo.user.phone_number).substr(0,4) + " " + (detailInfo.user.phone_number).substring(4,7) + " " + (detailInfo.user.phone_number).substring(7,9) + " " + (detailInfo.user.phone_number).substring(9,11) + " " + (detailInfo.user.phone_number).substring(11,13)}</p>
               </div>
             </div>
             <hr/>

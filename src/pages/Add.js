@@ -473,7 +473,7 @@ export default function Add({isMobile, token}) {
                         {brands.map(brand=><option key={brand.id} value={brand.id}>{brand.name}</option>)}
                     </select>
                 </div>
-                <br></br>
+                <hr/>
                 <div className="three_equal_columns">
                     <select id="cpu" name="laptop_cpu" style={laptopCpuBorderColor} onChange={handleChange} value={fullInfo.laptop_cpu} className="select three_column_width">
                         <option value="">CPU</option>
@@ -510,7 +510,7 @@ export default function Add({isMobile, token}) {
                         </div>
                     </div>
                 </div>
-                <br></br>
+                <hr/>
                 <div className="two_equal_columns">
                     <div className="date">
                         <h4 className="title">შეძენის რიცხვი (არჩევითი)</h4>
