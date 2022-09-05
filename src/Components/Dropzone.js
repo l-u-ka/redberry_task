@@ -10,13 +10,13 @@ export default function Dropzone({files, setFiles, textColor, borderColor, notUp
     const images = files.map((file) => (
       <div key={file.name}>
         <div>
-          <img src={file.preview} style={{width: "100%", height: !isMobile ? "420px" : "240px", borderRadius: "18px"}} alt="preview" />
+          <img src={file.preview} className="img_preview" alt="preview" />
         </div>
       </div>
     ))
     const fileInfo = files.map((file) => (
       <div key={file.path} style={{display: !isMobile && "flex", alignItems: "center"}}>
-        <div style={{maxWidth: '150px',fontSstyle: 'normal', fontWeight: '400', fontSize: '12px', lineHeight: '14px', color: '#202020'}}> {file.path}</div> 
+        <div className="drop_zone_imgPath"> {file.path}</div> 
         {!isMobile && <div className="comma" style={{marginRight: '10px'}}>{","}</div>}
         <div style={{color: '#5F5F5F'}}> {(file.size/1000000).toPrecision(2)} mb</div>
       </div>
@@ -76,9 +76,9 @@ export default function Dropzone({files, setFiles, textColor, borderColor, notUp
       return (
          <div className="container">
           <div>{images}</div>
-          <div {...getRootProps({style})} onClick={isMobile && open }>
+          <div {...getRootProps({style})}>
             <input {...getInputProps()}/>
-            {(isMobile && images.length===0) && <img src={ImgForMobile} alt="mobImg"></img>}
+            {(isMobile && images.length===0) && <img src={ImgForMobile} onClick={open} alt="mobImg"></img>}
             {(!isMobile && images.length===0 && notUploaded) && <img alt="errorImg" src={ImageError}/>}
             {images.length===0 && <p className="drop_down_text">{!isMobile ? 'ჩააგდე ან ატვირთე ლეპტოპის ფოტო' : 'ლეპტოპის ფოტოს ატვირთვა'}</p>}
             <div style={beneathPhoto}>

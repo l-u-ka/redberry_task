@@ -217,6 +217,11 @@
     .go_back:hover, .go_to_main {
         cursor: pointer;
     }
+    .img_preview {
+        width: 100%; 
+        height: 420px;
+        border-radius: 18px;
+    }
     .drop_zone_button {
         width: 233px;
         height: 60px;
@@ -240,7 +245,14 @@
         max-width: 200px;
         text-align: center;
     }
-
+    .drop_zone_imgPath {
+        max-width: 150px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #202020;
+    }
     .popup {
         position: absolute;
         top: 175%;
@@ -622,6 +634,11 @@
     
         color: #0089A7;
     }
+    .img_preview {
+        width: 100%; 
+        height: 240px; 
+        border-radius: 8px;
+    }
     .drop_zone_button {
         width: 187px;
         height: 46px;
@@ -642,7 +659,14 @@
         max-width: 150px;
         text-align: center;
     }
-    
+    .drop_zone_imgPath {
+        max-width: 150px;
+        font-style: normal;
+        font-weight: 400; 
+        font-size: 12px; 
+        line-height: 14px; 
+        color: #202020;
+    }
     .list_page--header {
         margin: 0px;
         font-style: normal;
