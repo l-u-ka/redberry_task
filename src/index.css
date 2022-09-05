@@ -1,11 +1,21 @@
+
+@font-face {
+font-family: "HelveticaNeue";
+src: local("HelveticaNeue"),
+ url("./fonts/HelveticaNeue.ttc") format("truetype");
+font-weight: bold;
+}
+
 body {
+  font-family:"HelveticaNeue";
+  
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

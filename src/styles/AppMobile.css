@@ -1,0 +1,340 @@
+body {
+    width: 390px;
+    height: 844px;
+}
+
+.landing_page {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_logo {
+    margin: 67px 0px 118px 0px;
+}
+.add_button {
+    margin-block: 120px 16px;
+}
+.add_button, .list_button {
+    width: 350px;
+    height: 60px;
+    color: white;
+    background-color: #62A1EB;
+    border: none;
+    border-radius: 8px;
+    font-family: "HelveticaNeue";
+}
+.add_button, .list_button:hover {
+    cursor: pointer;
+}
+
+.return_arrow {
+    position: absolute;
+    top: 35px;
+    left: 15px;
+}
+
+
+
+
+.add_page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
+}
+.form_part_indicator {
+    margin-bottom: 0px;
+}
+.under_form_part_indiator {
+    margin: 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #898989;   
+}
+.header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #232323;
+    margin-top: 10px;
+}
+.form {
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 15px 55px 15px;
+    background-color: #FFFFFF;
+    border-radius: 12px 12px 0px 0px;
+}
+.questions {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+}
+.button {
+    display: block;
+    margin-left: auto;
+    width: 160px;
+    height: 45px;
+
+    background: #62A1EB;
+    border-radius: 8px;
+    border: none;
+
+    font-family: "HelveticaNeue";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #FFFFFF;  
+}
+.upload_button{
+    width: 130px;
+    height: 45px;
+    background: #62A1EB;
+    border-radius: 8px;
+    border: none;
+
+    font-family: "HelveticaNeue";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #FFFFFF;  
+}
+.button, .upload_button:hover, .go_to_list_button {
+    cursor: pointer;
+}
+.title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin: 25px 0px 15px 0px;
+}
+.comment {
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0px;
+    color: #2E2E2E;
+}
+
+.select {
+    width: 100%;
+    height: 60px;
+    background: #EBEBEB;
+    margin: 20px 0px 20px 0px;
+    border: none;
+    border-radius: 8px;
+    font-family: "HelveticaNeue";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+.input {
+    width: 100%;
+    height: 60px;
+    border: 1.8px solid #8AC0E2;
+    border-radius: 8px;
+}
+
+.two_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.go_back, .go_to_main {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.08em;
+    color: #62A1EB;
+}
+.laptop_questions {
+    margin-bottom: 45px;
+    margin-top: 10px;
+}
+.radio_button_two {
+    margin-left: 50px;
+}
+.popup {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 844px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.go_to_list_button {
+    width: 280px;
+    height: 60px;
+    background: #62A1EB;
+    border-radius: 8px;
+    border: none;
+
+    font-family: "HelveticaNeue";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;  
+}
+.go_to_main, .go_back {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #0089A7;
+}
+
+
+
+.list_page--header {
+    margin: 0px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #232323;
+}
+.list_page {
+    padding: 30px 15px 50px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #FFFFFF;
+}
+
+.card_container {
+    width: 100%;
+    height: 125px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    gap: 15px;
+    background: #EAFAFF;
+    border: 1px solid #AED1EA;
+    border-radius: 10px;
+}
+.card--info {
+    box-sizing: border-box;
+    padding: 10px;    
+}
+.card--user_name, .card--link {
+    margin: 0px;
+}
+.card--laptop_name{
+    margin: 8px 0px 11px 0px;
+}
+.card--user_name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #2E2E2E;
+}
+.card--laptop_name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #2E2E2E;
+}
+.card--link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #4386A9;
+}
+.card--image {
+    width: 50%;
+    height: 100%;
+    border-radius: 6px;
+}
+.list-group {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+
+
+
+.detailInfoPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #FFFFFF;
+    padding: 30px 15px 40px 15px;
+}
+.detailInfoPageTitle {
+    margin: 0px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #232323;
+}
+.detailInfo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.detailInfo img, .eachColumn {
+    width: 100%;
+}
+.detailInfo img {
+    margin-bottom: 25px;
+}
+.eachColumn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0px;
+}
+.dark {
+    margin: 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 178%;
+
+    color: #2E2E2E; 
+}
+.light {
+    margin: 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #797979;
+}
+hr {
+    width: 100%;
+    border: 0.6px solid #A5A5A5;
+}
