@@ -11,7 +11,7 @@ import { useMediaQuery } from 'react-responsive'
 import './fonts/HelveticaNeue.ttc'
 
 function App() {
-  const [isMobile, setIsMobile] = React.useState(useMediaQuery({query: "(max-width: 390px)"})) 
+  const [isMobile, setIsMobile] = React.useState(useMediaQuery({query: "(max-width: 400px)"})) 
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
   const token = "b08acc2558ace25bbab33d0846a79260";
 
@@ -20,7 +20,7 @@ function App() {
         () => {
             function watchResize() {
                 setWindowWidth(window.innerWidth)
-                if(window.innerWidth <=390) setIsMobile(true)
+                if(window.innerWidth <= 400) setIsMobile(true)
                 else setIsMobile(false)
             }
             window.addEventListener("resize", watchResize);

@@ -44,7 +44,6 @@ export default function Add({isMobile, token}) {
         laptop_price: ""  
       })
 
-      //console.log(fullInfo)
 
       React.useEffect(() => {
         localStorage.setItem("formInfo", JSON.stringify(fullInfo))
@@ -371,9 +370,6 @@ export default function Add({isMobile, token}) {
       newFormData.append("laptop_purchase_date", fullInfo.laptop_purchase_date)
       newFormData.append("laptop_price", fullInfo.laptop_price)
       
-      //console.log(newFormData)
-      //console.log(newFormData.get("laptop_image"))
-      
       const moreRequestOptions = {
         method: 'POST',
         body: newFormData
@@ -385,12 +381,6 @@ export default function Add({isMobile, token}) {
         
   }, [iscompleted]);
 
-  
-  /*
-  console.log(files)
-  console.log(sentData)
-  console.log(fullInfo.laptop_image)
-  */
 
   // checking if form is validated and if so, setting isComplete state to true
     function handleSubmit(event) {
@@ -400,7 +390,6 @@ export default function Add({isMobile, token}) {
         localStorage.clear();
       }
     }
-    console.log(postResult)
 
     const backgroundStyle = { backgroundColor: iscompleted && 'rgba(0, 0, 0, 0.5)'}  
     const formInvisible = {visibility: iscompleted && 'hidden'} 

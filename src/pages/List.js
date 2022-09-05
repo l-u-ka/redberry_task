@@ -8,7 +8,7 @@ export default function List({isMobile, token}) {
     const [loading, setLoading] = React.useState();
     const [error, setError] = React.useState();
     const [list, setList] = React.useState([]);
-    //const token = "b08acc2558ace25bbab33d0846a79260";
+
     
     // based on token get list of laptopss
     React.useEffect(
